@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndiaBite-Login-page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,700;1,400&family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class=" font-eb text-xl ">
+    <div class="flex h-screen ">
+        <div class=" hidden w-2/4 my-auto lg:block "><img src="./images/Burger.png" alt=""  class="burger"></div>
+        <div class="flex flex-col justify-center items-center w-full lg:w-1/2 lg:text-left ">
+            <div>
+                <div class="text-2xl   font-bold lg:text-left">
+                    <div class="logo flex-row flex space-x-3  items-center justify-center lg:justify-start">
+                        <img src="images/logo.png" alt="" class="w-12 h-12">
+                        <h2 class="text-orange-500 font-bold text-3xl font-eb tracking-wider">IndiaBite</h2>
+                    </div>
+                </div>
+                <div class="text-4xl  text-yellow-400 text-center font-bold lg:text-left mt-4">
+                    <h2>Hello,</h2>
+                    <h2>Welcome Back</h2>
+                </div>
+                <!-- login-form -->
+            <form action="" class="mt-8 w-[80%] lg:w-96 mx-auto space-y-4 lg:text-left text-orange-400 font-semibold">
+                <h4>Login to manage you account.</h4>
+                <input type="email" placeholder="Email" class="w-full border py-2 px-4 rounded-md outline-none" required>
+                <input type="password" placeholder="Password" class="w-full border outline-none py-2 px-4 rounded-md" required>
+                <div class="text-red-500  font-bold cursor-pointer hover:text-orange-700 hover:underline">Forget your Password ?</div>
+                <button class="bg-yellow-400 text-orange-500 hover:bg-orange-600 hover:text-yellow-400 shadow-md rounded-md px-4 py-2 w-full  font-bold ">Login</button>
+            </form>
+            <div class="text-center p-2 font-bold text-orange-400 "><span>or</span>
+                <div class="flex flex-row justify-center items-center gap-8 mt-4"> 
+                    <i class="fa-brands fa-github cursor-pointer text-3xl hover:text-yellow-400 hover:scale-110"></i>
+                    <i class="fa-brands fa-google cursor-pointer text-3xl hover:text-yellow-400 hover:scale-110"></i>
+                    <i class="fa-brands fa-linkedin cursor-pointer text-3xl  hover:text-yellow-400 hover:scale-110"></i>
+                </div>
+
+            </div>
+            <div class="text-center mt-3 text-orange-400 "><h4 >don't have an account ? <span class="text-red-500 hover:cursor-pointer hover:text-orange-700 hover:underline hover:font-bold">Sign up here</span></h4></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/25c1b88d85.js" crossorigin="anonymous"></script>
+</body>
+</html>

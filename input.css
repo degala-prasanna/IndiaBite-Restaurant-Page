@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bgblur{
+  background-image: url("../images/bg.jpg"); 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  object-fit: cover;
+  /* backdrop-filter: blur(10px); */
+}
+body{
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-size:100%;
+    height: 100vh;
+}
+.bgOnscroll{
+  background-color: #faece1;
+  transition: background-color 200ms linear;
+  z-index: 3;
+}
+.nav-transparent{
+  background: transparent;
+}
+.rotate-img{
+  background: url('../images/Untitled\ design.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.color{
+  background:linear-gradient(to bottom right, #f89646,rgba(240, 240, 111, 0.918));
+ }
+nav .menu a:hover , nav .menu a:active{
+  background: #f89646;
+  border-radius: 5rem;
+  transition: all 0.5s;
+  color:ghostwhite;
+}
+.backgroundColor{
+  background-color: #faece1;
+}
+.hamburger{
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+    font-family: 'EB Garamond', serif;
+}
+.hamburger-top,.hamburger-middle,.hamburger-bottom{
+    background-color: #FB923c;
+    height: 2px;
+    width: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+.hamburger-middle{
+    transform: translateY(7px);
+}
+.hamburger-bottom{
+    transform: translateY(14px);
+}
+.open{
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+.open .hamburger-top{
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+.open .hamburger-middle{
+    display: none;
+}
+.open .hamburger-bottom{
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+.font-almendra{
+  font-family: 'Almendra', serif;
+}
+.font-eb{
+  font-family: 'EB Garamond', serif;
+}
+/* ENDLESS ROTATE */
+
+@keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  
+    from {
+      transform: rotate(0);
+    }
+  }
+  @keyframes heading {
+    from {
+      transform: translateY(-600px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  @keyframes hideAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+@keyframes rating {
+  to{
+    transform: translateX(0);
+  }
+  from{
+    transform: translateX(2000px);
+  }
+}
+@keyframes burger {
+  0%,100%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(3rem);
+  }
+ 
+}
+
+.rotate {
+    animation: rotate 20s linear infinite,heading 1.5s normal;
+    
+  }
+
+
+.hideAnimation {
+  animation: hideAnimation 1s 0s , heading 1.5s 1s normal;
+}
+
+.heading {
+  animation: heading 1.5s normal;    
+}
+.checkmenu{
+  animation: hideAnimation 1.5s 0s, heading 2s 1.5s normal;
+}
+#rating,#customer,#delivery{
+  animation: rating 2s  2s 1 normal both;
+}
+.burger{
+  animation: heading 1.5s normal,burger 3s 1.3s infinite  linear;
+}
+
